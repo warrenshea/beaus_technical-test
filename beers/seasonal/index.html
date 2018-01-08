@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Seasonal Beers - Beau's</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+        <meta name="title" content="Seasonal Beers - Beau's">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="#512b1b">
+        <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+        <link href="../../dist/css/global.css" rel="stylesheet">
+        <link href="../../dist/css/seasonal-beers.css" rel="stylesheet">
+    </head>
+    <body>
+        <a title="Skip Navigation" class="screen-reader-only" href="#skip-navigation">Skip Navigation</a>
+        <header class="sticky">
+            <div class="logo">
+                <a href="../../../beaus/" title="Go back to the homepage">
+                    <img src="../../dist/images/logo.svg" alt="Beau's" class="beaus-logo-svg">
+                </a>
+            </div>
+            <div class="menu">
+                <abbr title="English" class="language bold">EN</abbr>
+                <div class="arrow"></div>
+                <a href="javascript:;" title="Open navigation menu" id="hamburger-icon" class="hamburger-icon">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </a>
+            </div>
+        </header>
+        <div id="hamburger-menu" class="hamburger-menu">
+            <div class="logo">
+                <a href="../../../beaus/" class="tabindex-first-menu" title="Go back to the homepage">
+                    <img src="../../dist/images/logo.svg" alt="Beau's" class="beaus-logo-svg">
+                </a>
+            </div>
+            <a href="javascript:beau.hamburgerMenu.close();" class="hamburger-icon-close clearfix" title="Close the navigation">&times;</a>
+            <div class="container">
+                <section class="primary-nav">
+                    <ul class="hide-default-list-styles">
+                        <li><a href="https://beaus.ca/beers/">Beers</a>
+                            <ul>
+                                <li><a href="../seasonal/">Seasonal</a></li>
+                            </ul>
+                        <li><a href="https://beaus.ca/about-beaus/">About</a>
+                            <ul>
+                                <li><a href="https://beaus.ca/where-to-buy/">Where To Buy</a></li>
+                                <li><a href="https://beaus.ca/bybo/">About BYBO</a></li>
+                                <li><a href="https://beaus.ca/about-beaus/awards/">Awards</a></li>
+                                <li><a href="https://beaus.ca/keg-rental/">Keg Rentals</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="javascript:;">Connect</a>
+                            <ul>
+                                <li><a href="https://beaus.ca/blog/">Blog</a></li>
+                                <li><a href="https://beaus.ca/videos/">Videos</a></li>
+                                <li><a href="https://beaus.ca/recipes/">Recipes</a></li>
+                                <li><a href="https://beaus.ca/news/">News</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://shop.beaus.ca">Buy</a>
+                            <ul>
+                                <li><a href="https://shop.beaus.ca/collections/apparel">Apparel</a></li>
+                                <li><a href="https://shop.beaus.ca/collections/buy-your-beaus-online">Beer</a></li>
+                                <li><a href="https://shop.beaus.ca/collections/posters">Posters</a></li>
+                                <li><a href="https://shop.beaus.ca/collections/accessories">Accessories</a></li>
+                                <li><a href="https://shop.beaus.ca/collections/bar-glassware">Bar &amp; Glassware</a></li>
+                                <li><a href="https://shop.beaus.ca/collections/made-with-beaus">Made With Beau’s</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://beaus.ca/events/">Events</a>
+                            <ul>
+                                <li><a href="https://beaus.ca/sponsorship-donations/">Event Sponsorship &amp; Donations</a></li>
+                            </ul>
+                            <!--br to properly place menu contents in proper columns-->
+                            <br class="show-for-medium-up">
+                        </li>
+                    </ul>
+                </section>
+                <aside class="secondary-nav">
+                    <hr class="divider show-for-small-only">
+                    <ul class="hide-default-list-styles">
+                        <li><a href="https://beaus.ca/careers/">Careers</a></li>
+                        <li><a href="https://beaus.ca/privacy-policy/">Privacy Policy</a></li>
+                        <li><a href="https://beaus.ca/about-beaus/sustainability/">Sustainability</a></li>
+                        <li><a href="https://beaus.ca/about-beaus/ethical-sourcing/">Ethical Sourcing</a></li>
+                        <li><a href="https://beaus.ca/beaus-points/">Beau’s Points</a></li>
+                        <li><a href="https://beaus.ca/box-of-mystery/">Box Of Mystery</a></li>
+                        <li><a href="https://beaus.ca/contact-us/">Contact Us</a></li>
+                    </ul>
+                    <hr class="divider show-for-small-only">
+                    <ul class="hide-default-list-styles">
+                        <li><a href="https://twitter.com/beausallnatural">Twitter</a></li>
+                        <li><a href="https://www.facebook.com/BeausBrewery/">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/beausallnatural/">Instagram</a></li>
+                        <li><a href="https://www.youtube.com/user/BeausAllNatural" class="tabindex-last-menu">YouTube</a></li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+        <main>
+            <a id="skip-navigation" class="screen-reader-only"></a>
+            <h1 class="centered">Beau's Seasonal Beers</h1>
+            <ul class="beers-list seasonal-beers hide-default-list-styles">
+            </ul>
+            <div class="load-more-container"><a href="javascript:;" class="load-more uppercase">Load more</a></div>
+        </main>
+        <div class="featured-beer-container">
+            <a href="javascript:;" class="featured-beer-close" title="Go back to Beer List">&times;</a>
+        </div>
+        <footer class="default">
+            <div class="container">
+                <div class="subscribe clearfix">
+                    <div class="copy">
+                        <h3 class="uppercase">Subscribe to the Beau's newsletter</h3>
+                        <p>Beer, Events, and other fun stuff.</p>
+                    </div>
+                    <form action="?subscribe-success" method="post" class="clearfix">
+                        <label for="subscribe-email-input" class="screen-reader-only">Enter your email to subscribe</label>
+                        <input type="email" class="email" id="subscribe-email-input" onfocus="this.placeholder = ''" onblur="this.placeholder = 'enter your email'" placeholder="enter your email">
+                        <label for="subscribe-submit" class="screen-reader-only">Enter your email to subscribe</label>
+                        <input type="submit" class="submit" id="subscribe-submit" value="Subscribe">
+                    </form>
+                </div>
+                <hr class="divider">
+                <div class="clearfix">
+                    <div class="address">
+                        <h3 class="uppercase">Address</h3>
+                        <p>10 Terry Fox Dr. Vankleek Hill, <abbr title="Ontario">ON</abbr> K0B1R0</p>
+                        <div id="gmap_canvas"></div>
+                    </div>
+                    <div class="phone-number">
+                        <h3 class="uppercase">Phone Number</h3>
+                        <p>
+                            <span class="show-for-medium-up">1 866-585-BEER (2337)</span>
+                            <a href="tel:18665852337" class="show-for-small-only reverse">1 866-585-BEER (2337)</a>
+                        </p>
+                    </div>
+                    <div class="hours">
+                        <h3 class="uppercase">Hours</h3>
+                        <p>7 days a week: 10<abbr title="ante meridiem" class="uppercase">am</abbr> - 6<abbr title="post meridiem" class="uppercase">pm</abbr></p>
+                    </div>
+                    <div class="tours">
+                        <p>**Tours and tastings are available 7 days a week. No reservations required**</p>
+                    </div>
+                </div>
+                <hr class="divider">
+                <div class="sitemap">
+                    <ul class="hide-default-list-styles">
+                        <li><a class="reverse" href="https://beaus.ca/beers/">Beers</a></li>
+                        <li><a class="reverse" href="https://beaus.ca/about-beaus/">About Beau’s</a></li>
+                        <li><a class="reverse" href="https://beaus.ca/contact-us/">Contact Us</a></li>
+                        <li><a class="reverse" href="http://shop.beaus.ca/account/">Account</a></li>
+                        <li><a class="reverse" href="https://beaus.ca/careers/">Careers</a></li>
+                        <li><a class="reverse" href="https://beaus.ca/news/">News</a></li>
+                        <li><a class="reverse" href="https://beaus.ca/beaus-points/">Beau’s Points</a></li>
+                        <li><a class="reverse" href="https://beaus.ca/about-beaus/ethical-sourcing/">Ethical Sourcing</a></li>
+                        <li><a class="reverse" href="https://beaus.ca/events/">Events</a></li>
+                        <li><a class="reverse" href="https://beaus.ca/box-of-mystery/">Box Of Mystery</a></li>
+                        <li><a class="reverse" href="http://shop.beaus.ca">Buy</a></li>
+                        <li><a class="reverse" href="http://www.beaus.ca/design/Beaus-AODA-IASR-policy-2017.pdf">Accessibility Policy</a></li>
+                        <li><a class="reverse" href="http://www.beaus.ca/design/Beaus-AODA-IASR-Accessibility-Plan-2017.pdf">Accessibility Plan</a></li>
+                        <li><a class="reverse" href="http://www.beaus.ca/design/Beaus-Emergency-Response-Plan-2017.pdf">Emergency Response Plan</a></li>
+                    </ul>
+                </div>
+                <hr class="divider">
+                <small class="legal clearfix">
+                    <ul class="hide-default-list-styles">
+                        <li><a class="reverse" href="https://beaus.ca/privacy-policy/">Privacy Policy</a></li>
+                        <li><a class="reverse" href="https://beaus.ca/contact-us/">Contact Us</a></li>
+                    </ul>
+                    <p class="copyright centered">&copy; Beau's All Natural Brewing Company 2018</p>
+                </small>
+            </div>
+        </footer>
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBEiHYB8JWXZ5-NoAOnbV17XvPjmnETGg4"></script>
+        <script src="../../dist/js/global.js"></script>
+        <script src="../../dist/js/seasonal-beers.js"></script>
+    </body>
+</html>
