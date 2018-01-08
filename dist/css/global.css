@@ -378,58 +378,58 @@ header.sticky {
             margin: 7.5rem auto 0;
         }
     }
-    .hamburger-menu .primary-nav,
-    .hamburger-menu .secondary-nav {
+    .hamburger-menu nav.primary,
+    .hamburger-menu nav.secondary {
         width: 100%;
         padding: 0 2rem;
     }
-    .hamburger-menu .primary-nav li li,
-    .hamburger-menu .secondary-nav li li {
+    .hamburger-menu nav.primary li li,
+    .hamburger-menu nav.secondary li li {
         list-style: disc;
     }
-    .hamburger-menu .primary-nav li a {
+    .hamburger-menu nav.primary li a {
         font-size: 1.25rem;
     }
-    .hamburger-menu .primary-nav li li a {
+    .hamburger-menu nav.primary li li a {
         font-size: 1rem;
     }
     @media screen and (min-width: 40rem) {
-        .hamburger-menu .primary-nav {
+        .hamburger-menu nav.primary {
             float: left;
             width: 66.66%;
             -webkit-column-count: 2;
                     column-count: 2;
             padding: 0 2rem;
         }
-        .hamburger-menu .primary-nav ul {
+        .hamburger-menu nav.primary ul {
             margin: 0 0 3rem;
         }
-        .hamburger-menu .primary-nav li a {
+        .hamburger-menu nav.primary li a {
             font-size: 1.5rem;
         }
-        .hamburger-menu .primary-nav ul ul {
+        .hamburger-menu nav.primary ul ul {
             margin: 1rem 0 2rem;
         }
-        .hamburger-menu .primary-nav li li {
+        .hamburger-menu nav.primary li li {
             list-style: disc;
             margin: 1rem 0;
         }
-        .hamburger-menu .primary-nav li li a {
+        .hamburger-menu nav.primary li li a {
             font-size: 1rem;
         }
-        .hamburger-menu .secondary-nav {
+        .hamburger-menu nav.secondary {
             float: left;
             width: calc(33.33% - 2rem);
             padding-left: 2rem;
             border-left: 1px solid #f4debe;
         }
-        .hamburger-menu .secondary-nav ul {
+        .hamburger-menu nav.secondary ul {
             margin: 2.5rem 0;
         }
-        .hamburger-menu .secondary-nav li {
+        .hamburger-menu nav.secondary li {
             margin: 1rem 0;
         }
-        .hamburger-menu .secondary-nav li a {
+        .hamburger-menu nav.secondary li a {
             font-size: 0.9rem;
         }
     }
@@ -464,7 +464,7 @@ footer.default {
         background-color: #c39f77;
     }
     footer.default .subscribe,
-    footer.default .address,
+    footer.default address.brewery,
     footer.default .phone-number,
     footer.default .hours,
     footer.default .sitemap {
@@ -520,7 +520,7 @@ footer.default {
         background: none!important;
     }
     @media screen and (min-width: 40rem) {
-        footer.default .address {
+        footer.default address.brewery {
             float: left;
             width: 60%;
         }

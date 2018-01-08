@@ -17,15 +17,15 @@ let beerListTemp = [];
 let storeListTemp = [];
 
 /*  Beer Exclusion List Array - each array item is a Product ID  */
-/* 517797 Beau's Lug Tread */
 /* e.g. beerExclusionList = [1,234,5678,517797]; */
 const beerExclusionList = [517797];
+/* 517797 Beau's Lug Tread */
 
 beau.core.extend('loadSeasonalBeers', function() {
     'use strict';
 
     /*  Seasonal Conditions Query  */
-    const conditionsQuery = '&where=is_seasonal';
+    const conditionsQuery = `&where=is_seasonal`;
 
     return {
         initialize: function() {

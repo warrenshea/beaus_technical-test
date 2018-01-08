@@ -435,7 +435,7 @@ beau.core.extend('LCBOAPI', function() {
                     if (storeListConsolidated.length > 0) {
 
                         /* Remove all the stores */
-                        $('.stores-list').html('');
+                        $('.stores-list').html(``);
 
                         /* Iterate through store list and send store data to the rendering list function */
                         for (const [i, storeData] of storeListConsolidated.entries()) {
@@ -495,12 +495,12 @@ beau.core.extend('renderBeersData', function() {
          * @param object beerData - beer data from the API
          */
         renderBeerListItem: function(iterable, beerData) {
-            const _image_thumb = beerData.image_thumb_url || '../../dist/images/beer-no-image.jpg';
+            const _image_thumb = beerData.image_thumb_url || '../../dist/images/no-beer-image.jpg';
             const _alcoholContent = _formatAlcoholContent(beerData.alcohol_content);
             const _varietal = beerData.varietal || '';
             const _style = beerData.style || '';
             const _tasting_note = beerData.tasting_note || '';
-            const _divider = (_varietal && _style) ? ' • ' : ' ';
+            const _divider = (_varietal && _style) ? ' &bullet; ' : ' ';
 
             /* Use of ES6 template string */
             const markup = `
@@ -510,8 +510,8 @@ beau.core.extend('renderBeersData', function() {
                       src="${_image_thumb}"
                       alt="Bottle of ${beerData.name}">
                   </div>
-                  <div class="details" data-equalize-height='beer-details' data-equalize-medium-up>
-                    <div class="heading" data-equalize-height='beer-heading' data-equalize-medium-up>
+                  <div class="details" data-equalize-height="beer-details" data-equalize-medium-up>
+                    <div class="heading" data-equalize-height="beer-heading" data-equalize-medium-up>
                       <h2>${beerData.name}</h2>
                     </div>
                     <p class="uppercase">${_varietal}${_divider}${_alcoholContent}</p>
@@ -528,7 +528,7 @@ beau.core.extend('renderBeersData', function() {
                     </ul>
                   </div>
                 </li>`;
-            $('.beers-list').append(markup);
+            $(`.beers-list`).append(markup);
 
             /* Fade in the first 5 beers with a delay, and then the rest all at once */
             if (iterable < 5) {
@@ -603,7 +603,7 @@ beau.core.extend('renderFeaturedBeer', function() {
 
             /* create a "clone" of the beer list item, and animate it to be the featured beer */
             $('.featured-beer-container .cloned').remove();
-            $('.featured-beer-container').append('<div class="cloned"><div class="featured-container"></div></div>');
+            $('.featured-beer-container').append(`<div class="cloned"><div class="featured-container"></div></div>`);
             $('.featured-beer-container .cloned .featured-container').html($(anchorItem).html());
             $('.featured-beer-container .cloned .featured-container').attr('data-product-id', _productId);
             $('.featured-beer-container .cloned .details')
@@ -753,7 +753,7 @@ beau.core.extend('postalCodeManager', function() {
          */
         initUI: function() {
             const postalCode = beau.postalCodeManager.getPostalCode();
-            $('.cloned .postal-code-container').html('');
+            $('.cloned .postal-code-container').html(``);
             if (postalCode) {
                 $('.cloned .postal-code-container').append(markupHavePostalCode);
                 $('.cloned #postal-code').html(postalCode);
@@ -786,7 +786,7 @@ beau.core.extend('postalCodeManager', function() {
         clear: function() {
             const self = this;
             beau.core.unsetCookie('postalCode');
-            $('.stores-list').html('');
+            $('.stores-list').html(``);
             self.initUI();
             beau.LCBOAPI.resetStoreList();
         }
