@@ -2,7 +2,7 @@
 ## HackerYou Beau's Technical Challenge
 
 ### Items of note that may matter
-* The package can be found on a web server here: (http://v3.warrenshea.com/sandbox/beaus/beers/seasonal/)
+* The package can be found on a web server here: (http://sandbox.warrenshea.com/2018/beaus/beers/seasonal/)
 * I used jshint ES6 version to lint my JS. I have one warning on line 380 of `global.js`
 * There are a few places where I used ES6 `let`/`const`, Template Strings, Arrow functions, and Spread operators
 * [HTML Code Sniffer](http://squizlabs.github.io/HTML_CodeSniffer/) is an accessibility bookmarklet I use. For WCAG2 Level AA, there are only 2 errors. 1 is regarding color constrast of the hamburger menu (which I can't really change due to the styleguide colors provided). The other is an alt tag missing from the Google Maps code that I also can't really control.
@@ -22,8 +22,8 @@
 * /index.html
 
 ### File that can/should be code reviewed
-* [/dist/css/global.css](http://v3.warrenshea.com/sandbox/beaus/dist/css/global.css)
-* [/dist/css/seasonal-beers.css](http://v3.warrenshea.com/sandbox/beaus/dist/css/seasonal-beers.css)
-* [/dist/js/global.js](http://v3.warrenshea.com/sandbox/beaus/dist/js/global.js)
-* [/dist/js/seasonal-beers.js](http://v3.warrenshea.com/sandbox/beaus/dist/js/seasonal-beers.js)
-* [/beers/seasonal/index.html](http://v3.warrenshea.com/sandbox/beaus/beers/seasonal/index.html)
+* [/dist/css/global.css](http://sandbox.warrenshea.com/2018/beaus/dist/css/global.css)
+* [/dist/css/seasonal-beers.css](http://sandbox.warrenshea.com/2018/beaus/dist/css/seasonal-beers.css)
+* [/dist/js/global.js](http://sandbox.warrenshea.com/2018/beaus/dist/js/global.js)
+* [/dist/js/seasonal-beers.js](http://sandbox.warrenshea.com/2018/beaus/dist/js/seasonal-beers.js)
+* [/beers/seasonal/index.html](http://sandbox.warrenshea.com/2018/beaus/beers/seasonal/index.html)
