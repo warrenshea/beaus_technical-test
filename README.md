@@ -22,8 +22,8 @@
 * /index.html
 
 ### File that can/should be code reviewed
-[/dist/css/global.css](http://v3.warrenshea.com/sandbox/beaus/dist/css/global.css)
-[/dist/css/seasonal-beers.css](http://v3.warrenshea.com/sandbox/beaus/dist/css/seasonal-beers.css)
-[/dist/js/global.js](http://v3.warrenshea.com/sandbox/beaus/dist/js/global.js)
-[/dist/js/seasonal-beers.js](http://v3.warrenshea.com/sandbox/beaus/dist/js/seasonal-beers.js)
-[/beers/seasonal/index.html](http://v3.warrenshea.com/sandbox/beaus/beers/seasonal/index.html)
+* [/dist/css/global.css](http://v3.warrenshea.com/sandbox/beaus/dist/css/global.css)
+* [/dist/css/seasonal-beers.css](http://v3.warrenshea.com/sandbox/beaus/dist/css/seasonal-beers.css)
+* [/dist/js/global.js](http://v3.warrenshea.com/sandbox/beaus/dist/js/global.js)
+* [/dist/js/seasonal-beers.js](http://v3.warrenshea.com/sandbox/beaus/dist/js/seasonal-beers.js)
+* [/beers/seasonal/index.html](http://v3.warrenshea.com/sandbox/beaus/beers/seasonal/index.html)
